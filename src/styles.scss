@@ -1,0 +1,138 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define neutral colors
+$white: #ffffff;
+$hint: #fafafa;
+$light: #ededed;
+$medium: #d0d0d0;
+$dark: #a4a4a4;
+$x-dark: #767676;
+$xx-dark: #505050;
+$black: #1c1c1c;
+
+// Define brand colors
+$midnight: #001e6a;
+$admiral: #002fa1;
+$electric: #0036d4;
+$sky: #6bc1ff;
+$sky-light: #e5f5fe;
+$aqua: #0059d1;
+$admiral-65: #5165de;
+$admiral-80: #2341b8;
+$tangerine: #ff5b00;
+$pencil: #fcae3a;
+$pencil-80: #fcd23a;
+
+// Define primary background colors
+$primary-background-white: #ffffff;
+$primary-background-hint: #fafafa;
+$primary-background-sky-light: #e5f5fe;
+
+// Define alternative background colors
+$alternative-background-midnight: #001e6a;
+$alternative-background-admiral: #002fa1;
+$alternative-background-electric: #0036d4;
+$alternative-background-light: #ededed;
+
+// Define action colors
+$success: #00ff21;
+$error: #d62735;
+
+// Define CTA colors
+$cta-default: #fef100;
+$cta-hover: #dcb400;
+
+// Define link colors
+$link-default: #1f79e0;
+$link-hover: #0041a8;
+
+// Define gradients
+$gradient-g1: linear-gradient(90deg, #001e6a 0%, #0059d1 100%);
+$gradient-g2: linear-gradient(90deg, #002fa1 0%, #1f79e0 100%);
+$gradient-g3: linear-gradient(90deg, #0036d4 0%, #1f79e0 100%);
+$gradient-g4: linear-gradient(90deg, #002fa1 0%, #fcae3a 100%);
+$gradient-g5: linear-gradient(90deg, #1f79e0 0%, #fcae3a 100%);
+$gradient-g6: linear-gradient(90deg, #fef100 0%, #001e6a 100%);
+$gradient-g7: linear-gradient(90deg, #5165de 0%, #002fa1 100%);
+$gradient-g8: linear-gradient(90deg, #2341b8 0%, #0059d1 100%);
+$gradient-g9: linear-gradient(90deg, #fcd23a 0%, #0059d1 100%);
+$gradient-g10: linear-gradient(90deg, #fcae3a 0%, #0059d1 100%);
+$gradient-g11: linear-gradient(90deg, #ededed 0%, #6bc1ff 100%);
+
+// Define primary palette
+$primary-palette: (
+  50: $sky-light,
+  100: $hint,
+  200: $primary-background-sky-light,
+  300: $sky,
+  400: $admiral-65,
+  500: $admiral,
+  600: $admiral-80,
+  700: $electric,
+  800: $aqua,
+  900: $midnight,
+  A100: $admiral-65,
+  A200: $admiral-80,
+  A400: $electric,
+  A700: $midnight,
+  contrast: (
+    50: $black,
+    100: $black,
+    200: $black,
+    300: $white,
+    400: $white,
+    500: $white,
+    600: $white,
+    700: $white,
+    800: $white,
+    900: $white,
+    A100: $white,
+    A200: $white,
+    A400: $white,
+    A700: $white,
+  ),
+);
+
+// Define secondary palette
+$secondary-palette: (
+  50: $pencil-80,
+  100: $pencil,
+  200: $tangerine,
+  300: $success,
+  400: $error,
+  500: $cta-default,
+  600: $cta-hover,
+  700: $link-default,
+  800: $link-hover,
+  900: $dark,
+  A100: $pencil,
+  A200: $tangerine,
+  A400: $success,
+  A700: $error,
+  contrast: (
+    50: $black,
+    100: $black,
+    200: $white,
+    300: $white,
+    400: $white,
+    500: $black,
+    600: $black,
+    700: $white,
+    800: $white,
+    900: $white,
+    A100: $white,
+    A200: $white,
+    A400: $white,
+    A700: $white,
+  ),
+);
+
+// Define the theme object
